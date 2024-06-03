@@ -11,6 +11,7 @@ class UsersFactory extends Factory
         return [
             "nombre" => $this->faker->firstName(),
             "apellido" => $this->faker->lastName(),
+            "usuario" => $this->faker->userName(),
             "correo" => $this->faker->email(),
             "passwrd" => bcrypt('password'),
             "create_time" => $this->faker->dateTimeBetween('-1 year', 'now')

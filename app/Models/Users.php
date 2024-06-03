@@ -12,8 +12,8 @@ class Users extends Model
     protected $table = 'users';
     public $timestamps = false;
     protected $fillable = [
-        'nombre','apellido',
-        'correo', 'passwrd',
-        'create_time'
+        'usuario','nombre',
+        'apellido','correo',
+         'passwrd','create_time'
     ];
 }
